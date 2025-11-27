@@ -320,7 +320,7 @@ for name, attrs in pairs {
 
   ---- :help lsp-highlight -----------------------------------
 
-  LspReferenceText = { bg = a.float, underline = underline },
+  LspReferenceText = { bg = a.cursor, underline = false },
   -- LspReferenceRead = {},
   -- LspReferenceWrite = {},
   -- LspReferenceTarget = {},
@@ -328,6 +328,11 @@ for name, attrs in pairs {
   -- LspCodeLens = {},
   -- LspCodeLensSeparator = {},
   -- LspSignatureActiveParameter = {},
+
+  IlluminatedWord = { link = 'LspReferenceText' },
+  IlluminatedWordText = { link = 'LspReferenceText' },
+  IlluminatedWordRead = { link = 'LspReferenceText' },
+  IlluminatedWordWrite = { link = 'LspReferenceText' },
 
   ---- :help lsp-semantic-highlight --------------------------
 
